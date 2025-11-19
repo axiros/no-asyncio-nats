@@ -15,6 +15,5 @@ dynamic = ["version"]
 
 [tool.maturin]
 features = [
-    "pyo3/abi3-py311",
     "pyo3/extension-module"
 ]
