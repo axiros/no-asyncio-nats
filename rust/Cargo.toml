@@ -1,0 +1,18 @@
+[package]
+name = "no-asyncio-nats"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "no_asyncio_nats"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.27", features = ["anyhow"] }
+anyhow = { version  = "1" }
+tokio = {version = "1.48", features = ["rt", "sync"]}
+tokio-stream = {version = "0.1", default-features = false}
+async-nats = { version = "0.45" }
+time = { version = "0.3", default-features = false, features = ["std"]}
+bytes = { version = "1.10" }
+libc = "0.2"
