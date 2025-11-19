@@ -14,11 +14,22 @@ Even with this overhead performance is still decent.
 
 By using eventfd this driver can also be used with **gevent**. Simply use the `gevent_connect` function, which provides a gevent friendly NATS connection.
 
+
+# TODOS
+
+* publish on pypi
+* Implement a `.close()` method
+* Implement more different JetStream consumer types
+* Implement KeyValue store API
+* Implement error callback on the Client level
+
 ## Installation
 
-```bash
-pip install no-asyncio-nats
-```
+* Go to `Actions`
+* Select the latest green build
+* Download the .zip file according to you architecture
+* unzip the file
+* `pip install ./no_asyncio_nats-....whl`
 
 ## Quick Start
 
